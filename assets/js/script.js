@@ -17,39 +17,19 @@ function showPosition(position) {
 var latitude = position.coords.latitude;
 var longitude = position.coords.longitude;
 
-var adjustedLatitude = latitude + 90;
-var adjustedLongitude = longitude + 180;
+var newLat = Math.floor(((latitude + 90)/180)*(4**10));
+console.log(newLat);
+var newLong = Math.floor(((longitude + 180)/360)*(4**10));
+console.log(newLong);
 
-console.log(adjustedLatitude);
-console.log(adjustedLongitude);
+var arrexp9Lat = [];
 
-var digitOneLat = 4 - 4 * adjustedLatitude/180;
-var digitOneLong = 4 * adjustedLongitude/360;
+for (i = 0; i < 4; i++){
+  console.log((4**9)*i);
+  if (((4**9)*i) >= newLat){
+    arrexp9Lat.push(i);
+  }
+}
 
-console.log(digitOneLat + ", " + digitOneLong);
-
-var digitTwoLat = (4 * adjustedLatitude/180) - digitOneLat;
-var digitTwoLong = 4 - ((4 * adjustedLongitude/360) - digitOneLong);
-
-// console.log(digitTwoLat + ", " + digitTwoLong);
-
-// var digitOneLat = Math.floor(4 * adjustedLatitude/180);
-// var digitOneLong = 4 - Math.floor(4 * adjustedLongitude/360);
-
-// console.log(digitOneLat + ", " + digitOneLong);
-
-// var digitOneLat = Math.floor(4 * adjustedLatitude/180);
-// var digitOneLong = 4 - Math.floor(4 * adjustedLongitude/360);
-
-// console.log(digitOneLat + ", " + digitOneLong);
-
-// var digitOneLat = Math.floor(4 * adjustedLatitude/180);
-// var digitOneLong = 4 - Math.floor(4 * adjustedLongitude/360);
-
-// console.log(digitOneLat + ", " + digitOneLong);
-
-// var digitOneLat = Math.floor(4 * adjustedLatitude/180);
-// var digitOneLong = 4 - Math.floor(4 * adjustedLongitude/360);
-
-// console.log(digitOneLat + ", " + digitOneLong);
+console.log(arrexp9Lat[0]);
 }
