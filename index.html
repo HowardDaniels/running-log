@@ -13,6 +13,22 @@
 
 <p id="coords"></p>
 
-        <script src="assets/js/script.js"></script>
+<p>Converter</p>
+<select id="converter" onclick="changeFunc();">
+    <option value="coordstogeocode">Coordinates to geocode</option>
+    <option value="geocodetocoords">Geocode to coordinates</option>
+  </select>
+
+  <div id="selectedConverter"></div>
+
+  <br>
+
+  <button id="submit">Submit</button>
+
+  <div id="answer"></div>
+
+  <a href="https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyAeq1OZqujQ9_6uU8YxbsT0aqDsLwOZ8P4">Link</a>       
+  
+  <script src="assets/js/script.js"></script>
     </body>
 </html>
