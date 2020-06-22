@@ -20,9 +20,9 @@ console.log(newLat);
 var newLong = Math.floor(((longitude + 180)/360)*(4**10));
 console.log(newLong);
 
-var newLatQuad = newLat.toString(4);
+var newLatQuad = newLat.toString(4).padStart(10, "0");
 console.log(newLatQuad)
-var newLongQuad = newLong.toString(4);
+var newLongQuad = newLong.toString(4).padStart(10, "0");
 console.log(newLongQuad);
 
 var geocode = "";
@@ -123,9 +123,9 @@ console.log(newLat2);
 var newLong2 = Math.floor(((long + 180)/360)*(4**10));
 console.log(newLong2);
 
-var newLatQuad2 = newLat2.toString(4);
+var newLatQuad2 = newLat2.toString(4).padStart(10, "0");
 console.log(newLatQuad2)
-var newLongQuad2 = newLong2.toString(4);
+var newLongQuad2 = newLong2.toString(4).padStart(10, "0");
 console.log(newLongQuad2);
 
 var geocode2 = "";
