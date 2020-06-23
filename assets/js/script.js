@@ -198,8 +198,12 @@ document.getElementById("submit").addEventListener("click", function(){
 
 changeFunc();
 
+$("#name").attr("src", "../../../link.txt");
+
+// var queryURL = "https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=" + apiKey; 
+
 // $.ajax({
-//   url: weatherqueryURL,
+//   url: queryURL,
 //   method: "GET"
 // })
 
