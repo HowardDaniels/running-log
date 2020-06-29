@@ -200,6 +200,11 @@ changeFunc();
 
 $("#name").attr("src", "../../../link.txt");
 
+fs.appendFile('../../../link.txt', "hey", (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+
 // var queryURL = "https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=" + apiKey; 
 
 // $.ajax({

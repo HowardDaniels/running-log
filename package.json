@@ -1,0 +1,25 @@
+{
+  "name": "running-log",
+  "version": "1.0.0",
+  "description": "This application is a running log. It uses a hexadecimal system for coordinates, and logs runs and their statistics in a calendar, a map, a list, and a PR list.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HowardDaniels/running-log.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HowardDaniels/running-log/issues"
+  },
+  "homepage": "https://github.com/HowardDaniels/running-log#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "fs": "0.0.1-security",
+    "inquirer": "^7.2.0",
+    "node": "^14.4.0"
+  }
+}
